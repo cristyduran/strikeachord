@@ -1,0 +1,396 @@
+/* */
+/*
+Author: Cristina Duran
+Date: November 20, 2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style Rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles rules for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for mobile viewport */
+
+/* Hide tab-desk class */
+.tab-desk, #menu-links {
+    display: none;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #373684;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #373684;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #373684;
+    font-weight: bold;
+}
+
+#piano, #guitar, #violin {
+    margin: 0 2%;
+}
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#contact, #rental, h2 {
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373684;
+    text-shadow: 3px 3px 10px #8280cb;
+}
+
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 8px solid #373684;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 54, 132, 0.7); color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif; font-size: 1.5em;
+    font-weight: bold;
+}
+
+#contact, #rental h2, #form h2 { 
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+#contact .email-link {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+.map {
+    border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
+}
+
+/* Styles rules for table */
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th, td {
+    border: 1px solid #373684;
+    padding: 2%;
+}
+
+th {
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: #b7b7e1;
+}
+
+/* Styles rules for form elements */
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+ form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+ }
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
+
+.social img {
+    display: inline-block;
+    padding: 4%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+    /*Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /*Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+
+    /*Tablet Viewport: Style rules for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #e5e9fc;
+        font-size: 1.5em;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.25em 0.5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    /* Tablet Viewport: Style rule for map */
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+
+    /*Tablet Viewpoer: Styles rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Tablet viewport: style rules for footer area */
+    .copyright {
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+    /* Desktop Viewport: Style rules for header */
+    header {
+        padding: 2%;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+        transform: scale(1.2);
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+
+    main h3 {
+        font-size: 1.5em;
+    }
+
+    #piano, #guitar, #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    .grid {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+    }
+    
+    /* Desktop viewport: Style rules for table */
+    table {
+        width: 70%;
+    }
+
+    /*Desktop Viewport: Style rules for form elements */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
